@@ -14,19 +14,20 @@
 <h1>Gallery's page</h1>
 <div class="row">
     <div class="column">
-       
-        <div class="container">
-            <img src="../images/img1.jpg" width="200px">
+     
+      
+        <div class="container" onclick="openModal();currentSlide(1)">
+                      <img src="../images/img1.jpg"  width="200px">
             <div class="overlay"><h1>Marathon</h1></div>
           </div> 
       
-      <div class="container">
+      <div class="container" onclick="openModal();currentSlide(2)">
         <img src="../images/img2.jpg" width="200px">
         <div class="overlay"><h1>Gymnastics</h1></div>
       </div> 
 
-      <div class="container">
-        <img src="../images/img3.jpg" width="200px">
+      <div class="container" onclick="openModal();currentSlide(3)">
+        <img src="../images/img3.jpg"  width="200px">
         <div class="overlay"><h1>Climbing</h1></div>
       </div> 
 
@@ -34,56 +35,101 @@
 
     <div class="column">
 
-        <div class="container">
+        <div class="container" onclick="openModal();currentSlide(4)" >
         <img src="../images/img4.jpg" width="200px">
         <div class="overlay"><h1>Skiing</h1></div>
             </div>
 
-            <div class="container">
-                <img src="../images/img5.jpg" width="200px">
+            <div class="container" onclick="openModal();currentSlide(5)">
+                <img src="../images/img5.jpg"  width="200px">
                 <div class="overlay"><h1>Weight Lifting</h1></div>
               </div> 
 
     </div>
     <div class="column">     
 
-        <div class="container">
+        <div class="container" onclick="openModal();currentSlide(6)">
             <img src="../images/img6.jpg" width="200px">
             <div class="overlay"><h1>Basketball</h1></div>
           </div> 
 
-          <div class="container">
-            <img src="../images/img7.jpg" width="200px">
+          <div class="container" onclick="openModal();currentSlide(7)">
+            <img src="../images/img7.jpg"  width="200px">
             <div class="overlay"><h1>Swimming
             </h1></div>
           </div> 
 
-          <div class="container">
-            <img src="../images/img8.jpg" width="200px">
+          <div class="container"onclick="openModal();currentSlide(8)">
+            <img src="../images/img8.jpg"   width="200px">
             <div class="overlay"><h1>Jogging</h1></div>
           </div> 
 
      </div>
         <div class="column">   
 
-            <div class="container">
+            <div class="container" onclick="openModal();currentSlide(9)" >
                 <img src="../images/img9.jpg" width="200px">
                 <div class="overlay"><h1>Running</h1></div>
               </div> 
 
-              <div class="container">
-                <img src="../images/img10.jpg" width="200px">
+              <div class="container" onclick="openModal();currentSlide(10)">
+                <img src="../images/img10.jpg"   width="200px">
                 <div class="overlay"><h1>Cycling</h1></div>
               </div> 
 
             </div>
 </div>
 
-<div class="modal">
-    <span class="close">&times;</span>
-    <div class="modal-content"></div>
-      </div>
 
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+           <img src="../images/img1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+            <img src="../images/img2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+          <img src="../images/img3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+           <img src="../images/img4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+           <img src="../images/img5.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+           <img src="../images/img6.jpg" style="width:100%">
+    </div>
+    
+        <div class="mySlides">
+      <img src="../images/img7.jpg" style="width:100%">
+</div>
+    
+<div class="mySlides">
+       <img src="../images/img8.jpg" style="width:100%">
+</div>
+    
+<div class="mySlides">
+       <img src="../images/img9.jpg" style="width:100%">
+</div>
+    
+<div class="mySlides">
+       <img src="../images/img10.jpg" style="width:100%">
+</div>
+
+  
+  
+    </div>
+</div>
 
 <script src="../scripts/index.js"></script>
 </body>
